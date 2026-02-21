@@ -13359,10 +13359,12 @@ task.spawn(function()
 	for _, v in next, Holder:GetDescendants() do
 		    if v:IsA("Frame") or v:IsA("TextLabel") or v:IsA("TextBox") then
 		    RunService.RenderStepped:Connect(function()
-				v.BackgroundColor3 = Color3.fromHSV(tick() % 2, 1, 1)
+				v.BackgroundTransparency = 0
+				v.BackgroundColor3 = Color3.fromHSV(tick() % 4, 1, 1)
 			end)
 	    end
 	end
 end)
+
 
 
