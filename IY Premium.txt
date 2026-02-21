@@ -13356,13 +13356,16 @@ end)
 
 task.spawn(function()
 	local i = 0
-	RunService.RenderStepped:Connect(function(delta)
-		Holder.BackgroundColor3 = Color3.fromHSV(i,1,1)
-		Title.BackgroundColor3 = Color3.fromHSV(i,1,1)
-		Dark.BackgroundColor3 = Color3.fromRGB(i,1,1)
-		i = (i + delta*0.8) % 1
-	end)
+	for _, v in next, Holder:GetDescendants() do
+	    if v:IsA("Frame") or v:IsA("TextLabel") then
+		    RunService.RenderStepped:Connect(function(delta)
+				v.BackgroundColor3 = Color3.fromHSV(i,1,1)
+				i = (i + delta*0.8) % 1
+			end)
+	    end
+	end
 end)
+
 
 
 
