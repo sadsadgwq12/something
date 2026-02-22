@@ -445,7 +445,6 @@ ReferenceButton.ZIndex = 10
 Settings.Name = "Settings"
 Settings.Parent = Holder
 Settings.Active = true
-Settings.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
 Settings.BorderSizePixel = 0
 Settings.Position = UDim2.new(0, 0, 0, 220)
 Settings.Size = UDim2.new(0, 250, 0, 175)
@@ -458,7 +457,6 @@ SettingsHolder.Parent = Settings
 SettingsHolder.BackgroundTransparency = 1
 SettingsHolder.BorderSizePixel = 0
 SettingsHolder.Size = UDim2.new(1,0,1,0)
-SettingsHolder.ScrollBarImageColor3 = Color3.fromRGB(78,78,79)
 SettingsHolder.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
 SettingsHolder.CanvasSize = UDim2.new(0, 0, 0, 235)
 SettingsHolder.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
@@ -470,7 +468,6 @@ table.insert(scroll,SettingsHolder)
 
 Prefix.Name = "Prefix"
 Prefix.Parent = SettingsHolder
-Prefix.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Prefix.BorderSizePixel = 0
 Prefix.BackgroundTransparency = 0
 Prefix.Position = UDim2.new(0, 5, 0, 5)
@@ -486,7 +483,6 @@ table.insert(text1,Prefix)
 
 PrefixBox.Name = "PrefixBox"
 PrefixBox.Parent = Prefix
-PrefixBox.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
 PrefixBox.BorderSizePixel = 0
 PrefixBox.Position = UDim2.new(1, -20, 0, 0)
 PrefixBox.Size = UDim2.new(0, 20, 0, 20)
@@ -556,7 +552,6 @@ Aliases.Parent = SettingsHolder
 
 StayOpen.Name = "StayOpen"
 StayOpen.Parent = SettingsHolder
-StayOpen.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 StayOpen.BorderSizePixel = 0
 StayOpen.BackgroundTransparency = 1
 StayOpen.Position = UDim2.new(0, 5, 0, 30)
@@ -572,7 +567,6 @@ table.insert(text1,StayOpen)
 
 Button.Name = "Button"
 Button.Parent = StayOpen
-Button.BackgroundColor3 = Color3.fromRGB(78, 78, 79)
 Button.BorderSizePixel = 0
 Button.Position = UDim2.new(1, -20, 0, 0)
 Button.Size = UDim2.new(0, 20, 0, 20)
@@ -581,7 +575,6 @@ table.insert(shade3,Button)
 
 On.Name = "On"
 On.Parent = Button
-On.BackgroundColor3 = Color3.fromRGB(150, 150, 151)
 On.BackgroundTransparency = 1
 On.BorderSizePixel = 0
 On.Position = UDim2.new(0, 2, 0, 2)
@@ -626,7 +619,6 @@ table.insert(text1,Example)
 
 Notification.Name = randomString()
 Notification.Parent = ScaledHolder
-Notification.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
 Notification.BorderSizePixel = 0
 Notification.Position = UDim2.new(1, -500, 1, 20)
 Notification.Size = UDim2.new(0, 250, 0, 100)
@@ -635,7 +627,6 @@ table.insert(shade1,Notification)
 
 Title_2.Name = "Title"
 Title_2.Parent = Notification
-Title_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Title_2.BorderSizePixel = 0
 Title_2.Size = UDim2.new(0, 250, 0, 20)
 Title_2.Font = Enum.Font.SourceSans
@@ -684,7 +675,6 @@ PinButton.ZIndex = 10
 PinButton.Text = ""
 
 PinImage.Parent = PinButton
-PinImage.BackgroundColor3 = Color3.new(1, 1, 1)
 PinImage.BackgroundTransparency = 1
 PinImage.Position = UDim2.new(0, 3, 0, 3)
 PinImage.Size = UDim2.new(0, 14, 0, 14)
@@ -694,7 +684,6 @@ PinImage.Image = getcustomasset("infiniteyield/assets/pin.png")
 Tooltip.Name = randomString()
 Tooltip.Parent = ScaledHolder
 Tooltip.Active = true
-Tooltip.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
 Tooltip.BackgroundTransparency = 0.1
 Tooltip.BorderSizePixel = 0
 Tooltip.Size = UDim2.new(0, 200, 0, 96)
@@ -704,7 +693,6 @@ table.insert(shade1,Tooltip)
 
 Title_3.Name = "Title"
 Title_3.Parent = Tooltip
-Title_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Title_3.BackgroundTransparency = 0.1
 Title_3.BorderSizePixel = 0
 Title_3.Size = UDim2.new(0, 200, 0, 20)
@@ -735,7 +723,6 @@ table.insert(text1,Description)
 IntroBackground.Name = "IntroBackground"
 IntroBackground.Parent = Holder
 IntroBackground.Active = true
-IntroBackground.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
 IntroBackground.BorderSizePixel = 0
 IntroBackground.Position = UDim2.new(0, 0, 0, 45)
 IntroBackground.Size = UDim2.new(0, 250, 0, 175)
@@ -766,7 +753,6 @@ Credits.ZIndex = 10
 KeybindsFrame.Name = "KeybindsFrame"
 KeybindsFrame.Parent = Settings
 KeybindsFrame.Active = true
-KeybindsFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
 KeybindsFrame.BorderSizePixel = 0
 KeybindsFrame.Position = UDim2.new(0, 0, 0, 175)
 KeybindsFrame.Size = UDim2.new(0, 250, 0, 175)
@@ -775,7 +761,6 @@ table.insert(shade1,KeybindsFrame)
 
 Close.Name = "Close"
 Close.Parent = KeybindsFrame
-Close.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0, 205, 0, 150)
 Close.Size = UDim2.new(0, 40, 0, 20)
@@ -789,7 +774,6 @@ table.insert(text1,Close)
 
 Add.Name = "Add"
 Add.Parent = KeybindsFrame
-Add.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Add.BorderSizePixel = 0
 Add.Position = UDim2.new(0, 5, 0, 150)
 Add.Size = UDim2.new(0, 40, 0, 20)
@@ -803,7 +787,6 @@ table.insert(text1,Add)
 
 Delete.Name = "Delete"
 Delete.Parent = KeybindsFrame
-Delete.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Delete.BorderSizePixel = 0
 Delete.Position = UDim2.new(0, 50, 0, 150)
 Delete.Size = UDim2.new(0, 40, 0, 20)
@@ -821,7 +804,6 @@ Holder_2.BackgroundTransparency = 1
 Holder_2.BorderSizePixel = 0
 Holder_2.Position = UDim2.new(0, 0, 0, 0)
 Holder_2.Size = UDim2.new(0, 250, 0, 145)
-Holder_2.ScrollBarImageColor3 = Color3.fromRGB(78,78,79)
 Holder_2.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
 Holder_2.CanvasSize = UDim2.new(0, 0, 0, 0)
 Holder_2.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
@@ -832,7 +814,6 @@ Holder_2.ZIndex = 10
 
 Example_2.Name = "Example"
 Example_2.Parent = KeybindsFrame
-Example_2.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Example_2.BorderSizePixel = 0
 Example_2.Size = UDim2.new(0, 10, 0, 20)
 Example_2.Visible = false
@@ -841,7 +822,6 @@ table.insert(shade2,Example_2)
 
 Text_3.Name = "Text"
 Text_3.Parent = Example_2
-Text_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Text_3.BorderSizePixel = 0
 Text_3.Position = UDim2.new(0, 10, 0, 0)
 Text_3.Size = UDim2.new(0, 240, 0, 20)
@@ -889,7 +869,6 @@ table.insert(shade1,background_2)
 Dark_3.Name = "Dark"
 Dark_3.Parent = background_2
 Dark_3.Active = true
-Dark_3.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 Dark_3.BorderSizePixel = 0
 Dark_3.Position = UDim2.new(0, 135, 0, 0)
 Dark_3.Size = UDim2.new(0, 2, 0, 185)
@@ -13360,9 +13339,32 @@ task.spawn(function()
 			Cmdbar.BackgroundColor3 = Color3.fromHSV(i/360, 1,1)
 			Dark.BackgroundColor3 = Color3.fromHSV(i/360, 1,1)
 			Holder.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
+			Dark_3.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Text_3.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Example_2.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Holder_2.ScrollBarImageColor3 = Color3.fromRGB(i/360, 1,1)
+			Delete.BackgroundColor3 = Color3.fromRGB(4i/360, 1,1)
+			Add.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Close.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			KeybindsFrame.BackgroundColor3 = Color3.fromRGB(i/360, 1,1
+			IntroBackground.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Title_3.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Tooltip.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			PinImage.BackgroundColor3 = Color3.new(i/360, 1,1)
+			Title_2.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Notification.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			On.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Button.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			StayOpen.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			PrefixBox.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			Prefix.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			SettingsHolder.ScrollBarImageColor3 = Color3.fromRGB(i/360, 1,1)
+			Settings.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
+			task.wait()
 		end
 	end
 end)
+
 
 
 
