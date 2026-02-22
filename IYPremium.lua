@@ -13343,7 +13343,7 @@ task.spawn(function()
 			Text_3.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
 			Example_2.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
 			Holder_2.ScrollBarImageColor3 = Color3.fromRGB(i/360, 1,1)
-			Delete.BackgroundColor3 = Color3.fromRGB(4i/360, 1,1)
+			Delete.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
 			Add.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
 			Close.BackgroundColor3 = Color3.fromRGB(i/360, 1,1)
 			KeybindsFrame.BackgroundColor3 = Color3.fromRGB(i/360, 1,1
