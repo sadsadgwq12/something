@@ -13354,17 +13354,21 @@ task.spawn(function()
     minimizeHolder()
 end)
 
+
+for _, v in next, Holder:GetDescendants() do
+	if v:IsA("GuiObject") then
+		gObject = v
+	end
+end
+
 task.spawn(function()
 	while task.wait() do
 		for i = 1, 360 do
-			for _, v in next, Holder:GetDescendants() do
-				if v:IsA("GuiObject") then
-					v.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
-				end
-			end
+			gObject.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
 		end
 	end
 end)
+
 
 
 
