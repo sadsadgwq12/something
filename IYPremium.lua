@@ -13347,9 +13347,9 @@ task.spawn(function()
 		for i = 1, 360 do
 			for _, v in next, fram do
 				if v:IsA("ScrollingFrame") then
-					v.BackgroundColor3 = Color3.fromHSV(i/360, 1, 0.6)
+					v.BackgroundColor3 = Color3.fromHSV(i/360, 1, 0.3)
 				else
-					v.BackgroundColor3 = Color3.fromHSV(i/360, 1, 0.8)
+					v.BackgroundColor3 = Color3.fromHSV(i/360, 1, 0.7)
 				end
 			end
 			task.wait()
