@@ -13336,7 +13336,7 @@ end)
 task.spawn(function()
 	local fram = {}
 
-	for _, v in next, Holder:GetDescendants() do
+	for _, v in next, ScaledHolder:GetDescendants() do
 		if v:IsA("GuiObject") then
 			table.insert(fram,v)
 		end
