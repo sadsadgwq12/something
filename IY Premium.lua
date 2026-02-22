@@ -13357,11 +13357,12 @@ end)
 task.spawn(function()
 	while task.wait() do
 		for i = 1, 360 do
-			CmdBar.BackgroundColor3 = Color3.fromHSV(i/360, 1,1)
+			Cmdbar.BackgroundColor3 = Color3.fromHSV(i/360, 1,1)
 			Dark.BackgroundColor3 = Color3.fromHSV(i/360, 1,1)
 			Holder.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
 		end
 	end
 end)
+
 
 
