@@ -387,7 +387,6 @@ table.insert(text1,Title)
 Dark.Name = "Dark"
 Dark.Parent = Holder
 Dark.Active = true
-Dark.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
 Dark.BorderSizePixel = 0
 Dark.Position = UDim2.new(0, 0, 0, 45)
 Dark.Size = UDim2.new(0, 250, 0, 175)
@@ -13358,10 +13357,11 @@ end)
 task.spawn(function()
 	while task.wait() do
 		for i = 1, 360 do
-			CmdBar.BackgroundColor3 = Color3.fromHSV(i/360, 36, 37)
-			Dark.BackgroundColor3 = Color3.fromHSV(i/360, 36, 37)
+			CmdBar.BackgroundColor3 = Color3.fromHSV(i/360, 1,1)
+			Dark.BackgroundColor3 = Color3.fromHSV(i/360, 1,1)
 			Holder.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
 		end
 	end
 end)
+
 
