@@ -13356,9 +13356,9 @@ end)
 
 
 task.spawn(function()
-	for _, v in next, Holder:GetDescendants() do
-		if v:IsA("GuiObject") then
-			while task.wait() do
+	while task.wait() do
+		for _, v in next, Holder:GetDescendants() do
+			if v:IsA("GuiObject") then
 				for i = 1, 360 do
 					v.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
 				end
@@ -13366,4 +13366,5 @@ task.spawn(function()
 		end
 	end
 end)
+
 
