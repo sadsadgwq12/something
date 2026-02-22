@@ -13357,14 +13357,13 @@ end)
 
 task.spawn(function()
 	while task.wait() do
-		for _, v in next, Holder:GetDescendants() do
-			if v:IsA("GuiObject") then
-				for i = 1, 360 do
-					v.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
-				end
-			end
+		for i = 1, 360 do
+			Holder.CmdBar.BackgroundColor3 = Color3.fromHSV(i/360, 36, 37)
+			Holder.Dark.BackgroundColor3 = Color3.fromHSV(i/360, 36, 37)
+			Holder.BackgroundColor3 = Color3.fromHSV(i/360, 1, 1)
 		end
 	end
 end)
+
 
 
